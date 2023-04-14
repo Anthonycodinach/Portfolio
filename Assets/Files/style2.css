@@ -1,18 +1,22 @@
 * {
+    margin:0; padding:0; font-size:100%; line-height:1;
     font-family: 'Courier New', Courier, monospace;
 }
 
 header{
-    position: absolute;
     background-color: darkblue;
     width: 100%;
     height: 100px;
 }
 
+.header-img {
+    height: 200px;
+    width: 100%;
+    }
+
 .left-corner-header {
     background-color: lightblue;
     color: black;
-    display: inline;
     height: 20px;
     font-size: 60px;
     padding-left: 80px;
@@ -32,11 +36,18 @@ li a {
   }
 
 .header-links {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    align-items: center;
     display: inline;
     font-size: 25px;
     color: white;
     text-decoration: none;
-    text-align: right;
+    position: relative;
+    left: 800px;
+    top: 20px;
+
 }
 
 .footer-links {
@@ -45,14 +56,13 @@ li a {
     color: white;
     padding: 0px 20px;
     text-decoration:none;
-    text-align: right;
     position: relative;
-    bottom: 850px;
+    top: 750px;
     left: 600px;
 }
 
 .header-img {
-height: 300px;
+height: 200px;
 width: 100%;
 }
 
@@ -70,8 +80,8 @@ body {
     padding-right: 2.5px;
     display: inline;
     position: relative;
-    bottom: 80px;
-    left: 1707.2px;
+    bottom: 80.5px;
+    left: 1700px;
 }
 
 .line {
@@ -106,31 +116,86 @@ body {
  position: relative;
  left: 150px;
  bottom: 10px;
+ margin-right: 10px;
 }
 
 .contact-me {
     font-size: 50px;
     position: relative;
     left: 80px;
-    bottom: 800px;
+    top: 740px;
+    margin-right: 50px;
    }
 
 .work {
     font-size: 50px;
     position: relative;
     left: 250px;
-    bottom: 1000px;
+    bottom: 50px;
    }
 
 .paragraph-1 {
     display: block;
     display: flex;
     display: wrap;
+    padding-bottom: 20px;
     position: relative;
     left: 400px;
+    width: 1000px
 }
+
+.paragraph-2 {
+    display: block;
+    display: flex;
+    display: wrap;
+    position: relative;
+    left: 650px;
+    width: 1000px
+}
+
+.paragraph-div {
+    display: flex;
+    justify-content: left; 
+    flex-wrap: wrap; 
+    padding-bottom: 50px;
+}
+
 .surf-report {
     position: relative;
     bottom: 1150px;
     left: 1000px;
+}
+
+.button-div {
+    width: 150px; 
+    height: 150px;
+}
+
+.Big-button {
+    width: 500px; 
+    height: 200px;
+    object-fit: cover;
+}
+
+.small-buttons {
+    width: 150px; 
+    height: 150px;
+}
+
+.big {
+    position: relative;
+    left: 900px;
+}
+
+.small-row1 {
+    position: relative;
+    left: 500px;
+    top: 250px;
+}
+
+.small-row2
+{
+    position: relative;
+    left: 180px;
+    top: 500px;
 }
